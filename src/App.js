@@ -1,23 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import MaxLengthTextArea from "./components/MaxLengthTextArea";
 
 function App() {
+  const textareaStyle = {
+    borderRadius: 6,
+    padding: "12px",
+    fontSize: "16px",
+    color: "#333",
+    backgroundColor: "#fff",
+  };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <MaxLengthTextArea maxLen={20} style={textareaStyle} />
     </div>
   );
 }
